@@ -1,0 +1,105 @@
+.icon-mongo {
+    background-image: url("@/assets/images/skills/mongodb.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-docker {
+    background-image: url("@/assets/images/skills/docker.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-css {
+    background-image: url("@/assets/images/skills/css.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-elastic {
+    background-image: url("@/assets/images/skills/elastic.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-git {
+    background-image: url("@/assets/images/skills/git.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-html5 {
+    background-image: url("@/assets/images/skills/html5.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-java {
+    background-image: url("@/assets/images/skills/java.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-jenkins {
+    background-image: url("@/assets/images/skills/jenkins.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-kafka {
+    background-image: url("@/assets/images/skills/kafka.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-kotlin {
+    background-image: url("@/assets/images/skills/kotlin.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-oracle {
+    background-image: url("@/assets/images/skills/oracle.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-postgre {
+    background-image: url("@/assets/images/skills/postgre.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-redis {
+    background-image: url("@/assets/images/skills/redis.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-spring {
+    background-image: url("@/assets/images/skills/spring.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
+.icon-vue {
+    background-image: url("@/assets/images/skills/vue.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    background-position: center
+}
