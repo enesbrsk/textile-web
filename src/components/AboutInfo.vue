@@ -1,115 +1,209 @@
 <template>
-  <v-banner-text id="text" class="custom-banner-text"
-                 align="center">
-    <img :src="require('@/assets/images/ip.png')" alt="Developer" class="about-image"/>
-  </v-banner-text>
+  <div class="gallery">
+    <v-row>
+      <v-col cols="12" >
+        <div class="card-text">
+          <h2 style="font-size: 40px; color: #1F2229;">About Us</h2>
+          <v-row>
+              <p>
+                Boztosun Textile was established in 2018 by Egemen Boztosun as
+                a knitted and woven production company in istanbul. Our bussines is manufacturing high qualitiy knitted and woven products with sensitivity against natural and oscial enviroment. Our goal
+                is to be a leader in manufacturing of knitted and woven garments by providing enchanted services, relationship and profitability.
+              </p>
+          </v-row>
+          <h2 style="font-size: 40px; color: #1F2229;">Product</h2>
+          <p>
+            Boztosun Textile has a supply chain starting from collection to ready garment. We Supply knitting and waven ready garment with
+            a big coordination between our departments for our customers. Our Strengths are focusing on customer demands, short lead time, providing sustainable service and product quality and competitive prices.
+          </p>
+          <h2 id="mobile-h2" style="font-size: 40px; color: #1F2229;">Sustainability </h2>
+          <p>
+            Boztosun Textile cares about the future generations. We care about our nature and out ecosystem on our planet. We make our production according to these delicate issues.
+          </p>
+        </div>
+        <div style="margin-bottom: 500px;"></div>
 
-  <div class=" bg-base-600">
-    <div class="flex justify-center px-4 py-16 bg-top-gray-400 no-padding">
-      <v-container class="about-container">
-
-        <v-row align="center">
-
-          <v-col cols="12" md="4">
-            <img :src="require('@/assets/images/7.png')" alt="Developer" class="about-image"/>
-          </v-col>
-          <v-col cols="12" md="8" class="about-content">
-            <div>
-              <v-row align="center">
-                <v-col>
-                  <div>
-                    <h2>Birth:
-                      <v-label>16 Dec 1998</v-label>
-                    </h2>
-                    <h2>City:
-                      <v-label>Istanbul/ Turkey</v-label>
-                    </h2>
-                    <h2>University:
-                      <v-label>Duzce University</v-label>
-                    </h2>
-                    <h2>Department:
-                      <v-label>Computer Engineering</v-label>
-                    </h2>
-                    <h2>Degree:
-                      <v-label>Bachelor</v-label>
-                    </h2>
-                  </div>
-                </v-col>
-              </v-row>
-            </div>
-
-            <v-card-text align="left" class="about-description">
-              I have experience building web applications, middleware, and RESTful APIs using languages and frameworks
-              including Spring Boot, Hibernate, RDBMS, and NoSql. My strong understanding of fundamental CS concepts
-              like
-              object-oriented programming, aspect-oriented programming, MVC architecture, REST, SOAP, CI/CD, and TDD
-              allows
-              me to build software with modern techniques, service-based architecture, and third-party API integration.
-              I am
-              also extremely rigorous and perfectionist in my code, exactly as a Backend Developer should be.
-            </v-card-text>
-            <v-btn class="me-2 text-none custom-btn"
-                   variant="outlined"
-                   prepend-icon="mdi-export-variant"><a href="./EnesBirisik_CV.pdf" target="_blank">Resume</a>
-            </v-btn>
-          </v-col>
+        <v-row align="center" justify="center">
+          <figure >
+            <img  :src="require('@/assets/images/Factory.jpg')" alt="Mountains">
+            <figcaption>Factory</figcaption>
+          </figure>
+          <figure style="--c:#fff5">
+            <img :src="require('@/assets/images/showroom.jpg')" alt="Mountains">
+            <figcaption>Showroom</figcaption>
+          </figure>
         </v-row>
-      </v-container>
-    </div>
-  </div>
 
+      </v-col>
+    </v-row>
+    <div style="margin-top: 250px;"></div>
+
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      showInfo: [false, false, false],
+      cards: [
+        { info: "Fabrika" },
+        { info: "Showroom" }
+      ],
+    };
+  },
+  methods: {
+    showCardInfo(index) {
+      this.showInfo[index] = true;
+    },
+    hideCardInfo(index) {
+      this.showInfo[index] = false;
+    },
+  },
+};
 </script>
 
 <style scoped>
-.about-container {
-  text-align: left;
-  padding: 40px;
-  font-weight: 600;
-  font-family: Arial;
+figure img{
+  width: 350px;
+  height: 350px;
+}
+figure {
+  margin-bottom: 30px;
+  z-index: 5;
+  margin-right: 30px;
+  display: grid;
+  overflow: hidden;
+  cursor: pointer;
+}
+figure > * {
+  grid-area: 1/1;
+  transition: .4s;
+}
+figure figcaption {
+  display: grid;
+  align-items: end;
+  font-family: sans-serif;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #0000;
+  padding: .75rem;
+  background: var(--c,#0009);
+  clip-path: inset(0 var(--_i,100%) 0 0);
+  -webkit-mask:
+      linear-gradient(#000 0 0),
+      linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  -webkit-mask-clip: text, padding-box;
+  margin: -1px;
+}
+figure:hover figcaption{
+  --_i: 0%;
+}
+figure:hover img {
+  width: 350px;
+  height: 350px;
+  transform: scale(1.2);
+}
+@supports not (-webkit-mask-clip: text) {
+  figure figcaption {
+    -webkit-mask: none;
+    color: #fff;
+  }
 }
 
-.about-image {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
+.gallery {
+  padding: 16px;
+  left: 100px;
+  width: fit-content;
+  margin: auto;top: 300px;
 }
 
-.about-content {
+h2{
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.card-text {
+  margin-top: 80px;
   text-align: center;
+  background: border-box;
+  top: 450px;
+  font-family: Montserrat, sans-serif;
+  color: gray;
+  position: relative;
+  padding: 200px;
+}
+.card-text p{
+  text-align: left;
 }
 
-.about-description {
-  font-size: 18px;
-  line-height: 1.5;
-  margin-top: 30px;
-}
 
-.custom-btn[data-v-7e99b488] {
-  border: 2px solid purple !important;
-  color: purple !important;
+.card:hover .card-overlay {
+  opacity: 1;
 }
+@media (max-width: 1024px) {
 
-.custom-btn[data-v-7e99b488]:hover {
-  background-color: purple !important;
-  color: white !important;
-}
-@media(max-width: 1200px){
-  .about-image{
-    width: 70%;
-    height: 70%;
-    margin: 0 auto;
+  figure img{
+    width: 350px;
+    height: 350px;
   }
-  .about-container {
-     padding-left: 0px !important;
-     padding-right: 0px !important;
+  figure {
+    margin-bottom: 30px;
+    z-index: 5;
+    display: grid;
+    overflow: hidden;
+    cursor: pointer;
   }
-  .no-padding {
+  figure > * {
+    grid-area: 1/1;
+    transition: .4s;
+  }
+  figure figcaption {
+    display: grid;
+    align-items: end;
+    font-family: sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #0000;
+    padding: .75rem;
+    background: var(--c,#0009);
+    clip-path: inset(0 var(--_i,100%) 0 0);
+    -webkit-mask:
+        linear-gradient(#000 0 0),
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box;
+    margin: -1px;
+  }
+  figure:hover figcaption{
+    --_i: 0%;
+  }
+  figure:hover img {
+    width: 350px;
+    height: 350px;
+    transform: scale(1.2);
+  }
+  @supports not (-webkit-mask-clip: text) {
+    figure figcaption {
+      -webkit-mask: none;
+      color: #fff;
+    }
+  }
+  .gallery {
+    padding: 16px;
+    left: unset !important;
+    width: fit-content;
+    position: relative;
+    margin: auto;
+  }
+
+  .card-text {
+    font-family: Montserrat, sans-serif !important;
+    color: #070606 !important;
+    position: relative !important;
     padding: 0px !important;
-
+    margin: 30px !important;
+    font-weight: normal !important;
   }
 }
 </style>

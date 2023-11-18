@@ -6,10 +6,13 @@
 }
 
 .custom-banner-text {
-    font-size: 3rem;
-    font-weight: normal;
-    text-align: center;
+    width: 100%;
+    position: relative !important;
+    top: 50px;
+    left: 116px !important;
     padding-bottom: 10px;
+    font-size: -webkit-xxx-large;
+    /* font-family: emoji!important; */
 }
 
 .about-container {

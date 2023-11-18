@@ -1,0 +1,54 @@
+.v-container {
+    max-width: 100%;
+    padding: 23px;
+  }
+  
+  .custom-label {
+    color: #404040;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 14px !important;
+    font-weight: bold;
+    margin: 0 15px;
+  }
+  
+  .custom-col {
+    max-width: min-content !important;
+  }
+  
+  .custom .custom-combobox .v-text-field .v-field--no-label input {
+    opacity: 1;
+    background: unset !important;
+  }
+  
+  .custom-combobox {
+   
+  }
+  
+  .custom-combobox .v-combobox .v-field .v-text-field__prefix,
+  .v-combobox .v-field .v-text-field__suffix,
+  .v-combobox .v-field .v-field__input,
+  .v-combobox .v-field.v-field {
+    height: 107%;
+    background-color: #fafafa;
+  }
+  
+  .custom-combobox .v-input__control {
+    display: flex;
+    grid-area: control;
+    margin: 0 15px;
+  }
+  .custom-textarea{
+    margin: 0 15px;
+  }
+  .custom-textarea .v-input__control {
+   background:#fafafa; ;
+  }
+  .dp__input_icon_pad {
+    padding-left: 35px;
+    height: 58px;
+  }
+  .dp__input {
+    background: #fafafa !important;
+  }
+  

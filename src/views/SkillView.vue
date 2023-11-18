@@ -1,13 +1,11 @@
 <template>
     <SkillsOverview/>
-    <ExperienceSummary/>
 </template>
 <script>
 import SkillsOverview from "@/components/SkillsOverview.vue";
-import ExperienceSummary from "@/components/ExperienceSummary.vue";
 
 export default {
-  components: {ExperienceSummary, SkillsOverview},
+  components: { SkillsOverview},
   data(){
     return{
 
